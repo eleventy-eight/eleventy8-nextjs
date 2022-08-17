@@ -1,0 +1,10 @@
+@use "global";
+@use "abstracts/colors" as c;
+
+body {
+    background-color: c.$black;
+    background-image: url(../public/images/black-bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
