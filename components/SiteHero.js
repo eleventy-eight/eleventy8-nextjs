@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 // Import SwiperJS modules and core
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Pagination, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import SwiperJS default styles
@@ -16,12 +16,25 @@ import preyPosterPortrait from "../public/images/movies/prey-2022-portrait.jpg";
 import preyPosterWide from "../public/images/movies/prey-2022-wide.jpg";
 
 export default function SiteHero() {
+    const pagination = {
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      };
     return (
         <Swiper
             // Throw kitchen sink at it
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Pagination, A11y]}
             spaceBetween={0}
             slidesPerView={1}
+            loop={true}
+            effect={'fade'}
+            pagination={true}
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: true,
+            }}
         >
             <SwiperSlide>
                 <Image
@@ -29,6 +42,7 @@ export default function SiteHero() {
                     alt='Prey (2022)'
                     width={1320}
                     height={1980}
+                    layout='responsive'
                     priority
                 />
             </SwiperSlide>
