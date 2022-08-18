@@ -1,5 +1,6 @@
 import Head from "next/head";
 import SiteHeader from "../components/SiteHeader";
+import SiteHero from "../components/SiteHero";
 import SiteFooter from "../components/SiteFooter";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
                 </title>
             </Head>
             <SiteHeader />
+            <SiteHero />
             <main className='container'></main>
             <SiteFooter />
         </div>

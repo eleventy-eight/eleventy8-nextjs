@@ -1,6 +1,11 @@
+// Import core styles
 @use "global";
+@use "modules";
+
+// Import variables
 @use "abstracts/colors" as c;
 
+// Based!
 body {
     background-color: c.$black;
     background-image: url(../public/images/black-bg.jpg);
