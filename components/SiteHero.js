@@ -2,44 +2,50 @@ import Link from "next/link";
 import Image from "next/image";
 
 // Import SwiperJS modules and core
-import { Pagination, A11y } from "swiper";
+import { EffectFade, Autoplay, Pagination, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import SwiperJS default styles
 import "swiper/css";
-import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 // Import Graphics
 import preyPosterPortrait from "../public/images/movies/prey-2022-portrait.jpg";
-import preyPosterWide from "../public/images/movies/prey-2022-wide.jpg";
+import NTTDPosterPortrait from "../public/images/movies/nttd-2020-portrait.jpg";
+import TOTPPosterPortrait from "../public/images/movies/totp-2022-portrait.jpg";
 
 export default function SiteHero() {
-    const pagination = {
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + "</span>";
-        },
-      };
     return (
         <Swiper
             // Throw kitchen sink at it
-            modules={[Pagination, A11y]}
+            modules={[EffectFade, Autoplay, Pagination, A11y]}
+            autoHeight={true}
             spaceBetween={0}
             slidesPerView={1}
             loop={true}
-            effect={'fade'}
-            pagination={true}
+            effect={"fade"}
+            pagination={{ clickable: true }}
             autoplay={{
-                delay: 2500,
+                delay: 5000,
                 disableOnInteraction: true,
             }}
         >
             <SwiperSlide>
+                <div className='swiper-slide-content'>
+                    <Link href='https://youtu.be/MhzNcOSeR-Y'>
+                        <a
+                            className='btn btn-primary btn-hero'
+                            rel='noopner noreferrer'
+                            target='_blank'
+                        >
+                            <span>Watch Our Review</span>
+                        </a>
+                    </Link>
+                </div>
                 <Image
                     src={preyPosterPortrait}
-                    alt='Prey (2022)'
+                    alt='Prey (2022) Movie Review'
                     width={1320}
                     height={1980}
                     layout='responsive'
@@ -47,11 +53,44 @@ export default function SiteHero() {
                 />
             </SwiperSlide>
             <SwiperSlide>
+                <div className='swiper-slide-content'>
+                    <Link href='https://youtu.be/rGBOcyh2EJ8'>
+                        <a
+                            className='btn btn-primary btn-hero'
+                            rel='noopner noreferrer'
+                            target='_blank'
+                        >
+                            <span>Watch Our Review</span>
+                        </a>
+                    </Link>
+                </div>
                 <Image
-                    src={preyPosterWide}
-                    alt='Prey (2022)'
-                    width={3840}
-                    height={2160}
+                    src={NTTDPosterPortrait}
+                    alt='No Time To Die (2020) Movie Review'
+                    width={1000}
+                    height={1500}
+                    layout='responsive'
+                    priority
+                />
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className='swiper-slide-content'>
+                    <Link href='https://youtu.be/sHj3YBvDnXk'>
+                        <a
+                            className='btn btn-primary btn-hero'
+                            rel='noopner noreferrer'
+                            target='_blank'
+                        >
+                            <span>Watch Our Review</span>
+                        </a>
+                    </Link>
+                </div>
+                <Image
+                    src={TOTPPosterPortrait}
+                    alt='Terror on the Prairie (2022) Movie Review'
+                    width={1067}
+                    height={1600}
+                    layout='responsive'
                     priority
                 />
             </SwiperSlide>
