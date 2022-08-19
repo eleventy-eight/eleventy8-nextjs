@@ -49,6 +49,11 @@ export default function SiteOffcanvas() {
                         brings wry observations, Paul hosts and does the
                         technical stuff, and Samir brings facts and trivia.
                     </p>
+                    <p>
+                        <Link href='/movie-reviews/'>
+                            <a>Movie Reviews</a>
+                        </Link>
+                    </p>
                 </div>
                 <iframe
                     src='https://open.spotify.com/embed/show/0qyafuXnqprjWP5zs5wBKj?utm_source=generator&amp;theme=0'

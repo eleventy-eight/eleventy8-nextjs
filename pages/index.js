@@ -17,7 +17,6 @@ export default function Home() {
             </Head>
             <SiteHeader />
             <SiteHero />
-            <main className='container'></main>
             <SiteFooter />
         </div>
     );
