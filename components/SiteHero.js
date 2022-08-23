@@ -21,16 +21,15 @@ export default function SiteHero() {
         <Swiper
             // Throw kitchen sink at it
             modules={[EffectFade, Autoplay, Pagination, A11y]}
-            autoHeight={true}
             spaceBetween={0}
             slidesPerView={1}
             loop={true}
             effect={"fade"}
             pagination={{ clickable: true }}
-            autoplay={{
-                delay: 5000,
-                disableOnInteraction: true,
-            }}
+            // autoplay={{
+            //     delay: 5000,
+            //     disableOnInteraction: true,
+            // }}
         >
             <SwiperSlide>
                 <div className='swiper-slide-content'>
@@ -49,7 +48,7 @@ export default function SiteHero() {
                     alt='Mad Max (1979) Movie Review'
                     width={1000}
                     height={1500}
-                    layout='responsive'
+                    layout='fill'
                     priority
                 />
             </SwiperSlide>
@@ -70,7 +69,7 @@ export default function SiteHero() {
                     alt='Prey (2022) Movie Review'
                     width={1320}
                     height={1980}
-                    layout='responsive'
+                    layout='fill'
                     priority
                 />
             </SwiperSlide>
@@ -91,7 +90,7 @@ export default function SiteHero() {
                     alt='No Time To Die (2020) Movie Review'
                     width={1000}
                     height={1500}
-                    layout='responsive'
+                    layout='fill'
                     priority
                 />
             </SwiperSlide>
@@ -112,7 +111,7 @@ export default function SiteHero() {
                     alt='Terror on the Prairie (2022) Movie Review'
                     width={1067}
                     height={1600}
-                    layout='responsive'
+                    layout='fill'
                     priority
                 />
             </SwiperSlide>
