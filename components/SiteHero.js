@@ -26,10 +26,10 @@ export default function SiteHero() {
             loop={true}
             effect={"fade"}
             pagination={{ clickable: true }}
-            // autoplay={{
-            //     delay: 5000,
-            //     disableOnInteraction: true,
-            // }}
+            autoplay={{
+                delay: 5000,
+                disableOnInteraction: true,
+            }}
         >
             <SwiperSlide>
                 <div className='swiper-slide-content'>
@@ -46,8 +46,6 @@ export default function SiteHero() {
                 <Image
                     src={madMaxPosterPortrait}
                     alt='Mad Max (1979) Movie Review'
-                    width={1000}
-                    height={1500}
                     layout='fill'
                     priority
                 />
@@ -67,8 +65,6 @@ export default function SiteHero() {
                 <Image
                     src={preyPosterPortrait}
                     alt='Prey (2022) Movie Review'
-                    width={1320}
-                    height={1980}
                     layout='fill'
                     priority
                 />
@@ -88,8 +84,6 @@ export default function SiteHero() {
                 <Image
                     src={NTTDPosterPortrait}
                     alt='No Time To Die (2020) Movie Review'
-                    width={1000}
-                    height={1500}
                     layout='fill'
                     priority
                 />
@@ -109,8 +103,6 @@ export default function SiteHero() {
                 <Image
                     src={TOTPPosterPortrait}
                     alt='Terror on the Prairie (2022) Movie Review'
-                    width={1067}
-                    height={1600}
                     layout='fill'
                     priority
                 />
