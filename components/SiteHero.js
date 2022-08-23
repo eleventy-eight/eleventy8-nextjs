@@ -11,11 +11,18 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 // Import Graphics
+import madMaxPosterPortrait from "../public/images/movies/mad-max-1979-portrait.jpg";
 import preyPosterPortrait from "../public/images/movies/prey-2022-portrait.jpg";
 import NTTDPosterPortrait from "../public/images/movies/nttd-2020-portrait.jpg";
 import TOTPPosterPortrait from "../public/images/movies/totp-2022-portrait.jpg";
 
-export default function SiteHero() {
+export default function SiteHero({
+    SwiperUrl,
+    SwiperImage,
+    SwiperWidth,
+    SwiperHeight,
+    SwiperLayout,
+}) {
     return (
         <Swiper
             // Throw kitchen sink at it
@@ -31,6 +38,27 @@ export default function SiteHero() {
                 disableOnInteraction: true,
             }}
         >
+            <SwiperSlide>
+                <div className='swiper-slide-content'>
+                    <Link href='https://youtu.be/Yh9Eq6D-hfM'>
+                        <a
+                            className='btn btn-primary btn-hero'
+                            rel='noopner noreferrer'
+                            target='_blank'
+                        >
+                            <span>Watch Our Review</span>
+                        </a>
+                    </Link>
+                </div>
+                <Image
+                    src={madMaxPosterPortrait}
+                    alt='Mad Max (1979) Movie Review'
+                    width={1000}
+                    height={1500}
+                    layout='responsive'
+                    priority
+                />
+            </SwiperSlide>
             <SwiperSlide>
                 <div className='swiper-slide-content'>
                     <Link href='https://youtu.be/MhzNcOSeR-Y'>
