@@ -16,13 +16,7 @@ import preyPosterPortrait from "../public/images/movies/prey-2022-portrait.jpg";
 import NTTDPosterPortrait from "../public/images/movies/nttd-2020-portrait.jpg";
 import TOTPPosterPortrait from "../public/images/movies/totp-2022-portrait.jpg";
 
-export default function SiteHero({
-    SwiperUrl,
-    SwiperImage,
-    SwiperWidth,
-    SwiperHeight,
-    SwiperLayout,
-}) {
+export default function SiteHero() {
     return (
         <Swiper
             // Throw kitchen sink at it
@@ -33,10 +27,10 @@ export default function SiteHero({
             loop={true}
             effect={"fade"}
             pagination={{ clickable: true }}
-            autoplay={{
-                delay: 5000,
-                disableOnInteraction: true,
-            }}
+            // autoplay={{
+            //     delay: 5000,
+            //     disableOnInteraction: true,
+            // }}
         >
             <SwiperSlide>
                 <div className='swiper-slide-content'>

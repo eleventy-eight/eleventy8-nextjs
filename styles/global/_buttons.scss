@@ -17,8 +17,9 @@
             text-shadow: 0 0 20px rgba(c.$black, 0.4);
             text-transform: uppercase;
             @media (max-width: 576.98px) {
+                background-position: 45px center;
                 background-size: 300px;
-                font-size: 3rem;
+                font-size: 2rem;
                 padding: 1.5rem 4rem;
             }
             span {
