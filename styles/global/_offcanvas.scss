@@ -5,9 +5,28 @@
     padding: 1rem 1.5rem;
     .offcanvas-body {
         #offcanvas-intro {
-        }
-        iframe {
-            margin: 1.5rem 0 3rem 0;
+            #offcanvas-navigation {
+                list-style: none;
+                padding: 0 0 0 1rem;
+                li {
+                    a {
+                        color: c.$white;
+                        text-decoration: none;
+                        transition: all 0.5s;
+                        &:hover {
+                            color: c.$brand-secondary;
+                        }
+                    }
+                    &:before {
+                        content: "\2022";
+                        color: red;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1rem;
+                        margin-left: -1rem;
+                    }
+                }
+            }
         }
         #offcanvas-bmc {
             text-align: center;

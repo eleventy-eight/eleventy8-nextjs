@@ -4,6 +4,7 @@ import SiteHeader from "../components/SiteHeader";
 import SiteHero from "../components/SiteHero";
 import SiteIntro from "../components/SiteIntro";
 import SiteTeam from "../components/SiteTeam";
+import SitePodcast from "../components/SitePodcast";
 import SiteFooter from "../components/SiteFooter";
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
             <section className='container'>
                 <SiteIntro />
                 <SiteTeam />
+                <SitePodcast />
             </section>
             <SiteFooter />
         </div>

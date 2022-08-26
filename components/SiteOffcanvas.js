@@ -49,19 +49,18 @@ export default function SiteOffcanvas() {
                         brings wry observations, Paul hosts and does the
                         technical stuff, and Samir brings facts and trivia.
                     </p>
-                </div>
-                <iframe
-                    src='https://open.spotify.com/embed/show/0qyafuXnqprjWP5zs5wBKj?utm_source=generator&amp;theme=0'
-                    width='100%'
-                    height='352'
-                    allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
-                ></iframe>
-                <div id='offcanvas-bmc'>
-                    <Link href='https://www.buymeacoffee.com/eleventy8'>
-                        <a rel='noopener noreferrer' target='_blank'>
-                            <img src='https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=eleventy8&button_colour=FF5F5F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00' />
-                        </a>
-                    </Link>
+                    <ul id='offcanvas-navigation'>
+                        <li>
+                            <Link href='#intro'>
+                                <a>Eleventy8</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href='#team'>
+                                <a>The Team</a>
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
                 <ul id='offcanvas-socials'>
                     <li>
@@ -221,20 +220,6 @@ export default function SiteOffcanvas() {
                         </Link>
                     </li>
                 </ul>
-                <footer>
-                    <p>
-                        &copy; Eleventy8 | Built by Paul with{" "}
-                        <Link href='https://nextjs.org/'>
-                            <a
-                                rel='noopener noreferrer'
-                                target='_blank'
-                                title='Built by Paul with NextJS'
-                            >
-                                NextJS
-                            </a>
-                        </Link>
-                    </p>
-                </footer>
             </main>
         </section>
     );

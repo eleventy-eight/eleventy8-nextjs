@@ -1,0 +1,21 @@
+@use "../abstracts/colors" as c;
+
+footer {
+    p {
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0) 100%
+        );
+        text-align: center;
+        padding: 1rem 0;
+        a {
+            color: c.$white;
+            text-decoration: none;
+            transition: all 0.5s;
+            &:hover {
+                color: c.$brand-secondary;
+            }
+        }
+    }
+}

@@ -17,6 +17,8 @@ export default function SiteIntro() {
                             src={Logo}
                             alt='Eleventy8 | Three men in their 40s talk about...
                             stuff'
+                            width={400}
+                            height={100}
                         />
                     </h1>
                     <p>

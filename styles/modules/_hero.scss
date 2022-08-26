@@ -3,6 +3,7 @@
 .swiper {
     height: 100vh;
     max-height: 100vh;
+    border-bottom: 3px solid c.$brand-secondary;
     .swiper-wrapper {
         .swiper-slide {
             .swiper-slide-content {
@@ -21,6 +22,7 @@
         }
     }
     .swiper-pagination {
+        margin-bottom: 1.5rem;
         .swiper-pagination-bullet {
             background-color: c.$brand-primary;
             width: 25px;
