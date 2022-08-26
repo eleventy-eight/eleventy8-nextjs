@@ -1,6 +1,9 @@
 import Head from "next/head";
+import Link from "next/link";
 import SiteHeader from "../components/SiteHeader";
 import SiteHero from "../components/SiteHero";
+import SiteIntro from "../components/SiteIntro";
+import SiteTeam from "../components/SiteTeam";
 import SiteFooter from "../components/SiteFooter";
 
 export default function Home() {
@@ -14,9 +17,17 @@ export default function Home() {
                 <title>
                     Eleventy8 | Three men in their 40s talk about... stuff
                 </title>
+                <meta
+                    property='og:description'
+                    content='Justin brings wry observations, Paul hosts and does the technical stuff, and Samir brings facts and trivia.'
+                />
             </Head>
             <SiteHeader />
             <SiteHero />
+            <section className='container'>
+                <SiteIntro />
+                <SiteTeam />
+            </section>
             <SiteFooter />
         </div>
     );

@@ -6,18 +6,12 @@ export default function Document() {
             <Head>
                 <meta property='og:locale' content='en_GB' />
                 <meta property='og:title' content='Eleventy8' />
-                <meta
-                    property='og:description'
-                    content='Justin brings wry observations, Paul hosts and does the technical stuff, and Samir brings facts and trivia.'
-                />
-                <meta property='og:url' content='https://eleventy8.com' />
                 <meta property='og:type' content='website' />
                 <meta property='og:image' content='/images/open-graph.jpg' />
                 <meta property='og:image:width' content='1200' />
                 <meta property='og:image:height' content='630' />
                 <meta name='msapplication-TileColor' content='#da532c' />
                 <meta name='theme-color' content='#000000' />
-
                 <link rel='preconnect' href='https://fonts.googleapis.com' />
                 <link
                     rel='preconnect'
