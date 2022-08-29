@@ -11,6 +11,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 // Import Graphics
+import getCarter from "../public/images/movies/get-carter-1971-portrait.jpg";
 import madMaxPosterPortrait from "../public/images/movies/mad-max-1979-portrait.jpg";
 import preyPosterPortrait from "../public/images/movies/prey-2022-portrait.jpg";
 import NTTDPosterPortrait from "../public/images/movies/nttd-2020-portrait.jpg";
@@ -31,6 +32,25 @@ export default function SiteHero() {
                 disableOnInteraction: true,
             }}
         >
+            <SwiperSlide>
+                <div className='swiper-slide-content'>
+                    <Link href='https://youtu.be/OssjkfaxS6w'>
+                        <a
+                            className='btn btn-primary btn-hero'
+                            rel='noopner noreferrer'
+                            target='_blank'
+                        >
+                            <span>Watch Our Review</span>
+                        </a>
+                    </Link>
+                </div>
+                <Image
+                    src={getCarter}
+                    alt='Get Carter (1971) Movie Review'
+                    layout='fill'
+                    priority
+                />
+            </SwiperSlide>
             <SwiperSlide>
                 <div className='swiper-slide-content'>
                     <Link href='https://youtu.be/Yh9Eq6D-hfM'>
