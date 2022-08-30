@@ -27,8 +27,8 @@ export default function Home() {
             <SiteHero />
             <section className='container'>
                 <SiteIntro />
-                <SiteTeam />
                 <SitePodcast />
+                <SiteTeam />
             </section>
             <SiteFooter />
         </div>

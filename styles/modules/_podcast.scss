@@ -1,0 +1,15 @@
+@use "../abstracts/colors" as c;
+
+#podcast {
+    margin-bottom: 6rem;
+    h2 {
+        font-family: "Anton";
+        font-size: 4rem;
+        font-style: italic;
+        text-transform: uppercase;
+        text-align: center;
+        color: c.$brand-secondary;
+        transform: rotate(-6deg);
+        margin: 3rem 0;
+    }
+}

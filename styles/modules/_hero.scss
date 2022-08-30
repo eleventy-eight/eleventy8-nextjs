@@ -12,12 +12,15 @@
                 display: flex;
                 height: 100%;
                 width: 100%;
-                align-items: center;
+                align-items: flex-end;
                 justify-content: center;
                 align-content: center;
             }
             img {
                 object-fit: cover;
+            }
+            .btn {
+                margin-bottom: 6rem;
             }
         }
     }
