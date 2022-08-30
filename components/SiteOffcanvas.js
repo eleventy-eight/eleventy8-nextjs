@@ -49,18 +49,18 @@ export default function SiteOffcanvas() {
                         brings wry observations, Paul hosts and does the
                         technical stuff, and Samir brings facts and trivia.
                     </p>
-                    <ul id='offcanvas-navigation'>
+                    {/* <ul id='offcanvas-navigation'>
                         <li>
                             <Link href='#intro'>
-                                <a>Eleventy8</a>
+                                <a data-bs-dismiss='offcanvas'>Eleventy8</a>
                             </Link>
                         </li>
                         <li>
                             <Link href='#team'>
-                                <a>The Team</a>
+                                <a data-bs-dismiss='offcanvas'>The Team</a>
                             </Link>
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
                 <ul id='offcanvas-socials'>
                     <li>
