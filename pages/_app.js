@@ -24,6 +24,11 @@ function MyApp({ Component, pageProps }) {
                     gtag('config', 'UA-168214894-1');
                 `}
         </Script>
+        <Script
+            async
+            src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6140993113558726'
+            crossorigin='anonymous'
+        />
     </>;
 
     return <Component {...pageProps} />;
