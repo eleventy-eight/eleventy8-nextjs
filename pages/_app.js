@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
                 `}
         </Script>
         <Script
-            async
+            strategy='afterInteractive'
             src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6140993113558726'
             crossorigin='anonymous'
         />
