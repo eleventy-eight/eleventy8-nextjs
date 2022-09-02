@@ -12,7 +12,7 @@ export default function SiteTeam() {
                     <h2>The Team</h2>
                 </div>
             </div>
-            <div className='row row-cols-1 row-cols-md-3 g-4'>
+            <div className='row row-cols-1 row-cols-lg-3 g-4'>
                 <div className='col'>
                     <div className='team-member h-100'>
                         <p className='team-member__name'>

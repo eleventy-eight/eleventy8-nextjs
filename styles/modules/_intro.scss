@@ -1,6 +1,7 @@
+@use "../abstracts/colors" as c;
+
 #intro {
-    margin: 6rem 0;
-    text-align: center;
+    margin: 6rem 0 3rem 0;
     h1 {
         strong {
             position: absolute;
@@ -8,6 +9,20 @@
         }
     }
     p {
-        margin: 3rem 0;
+        margin: 1rem 0 2rem 0;
+    }
+    iframe {
+        border: 3px solid c.$brand-secondary;
+        border-radius: 10px;
+        box-shadow: 6px 6px 2px c.$black;
+    }
+    @media (max-width: 991px) {
+        h1,
+        p {
+            text-align: center;
+        }
+        iframe {
+            margin-top: 2rem;
+        }
     }
 }

@@ -18,7 +18,7 @@
         align-items: flex-end;
         .team-member__name {
             background-image: url(../../public/images/paint-slash.svg);
-            background-position: 90px center;
+            background-position: center center;
             background-repeat: no-repeat;
             position: absolute;
             left: 0;
@@ -39,6 +39,7 @@
         img {
             border: 2px solid c.$white !important;
             border-radius: 10px;
+            box-shadow: 6px 6px 2px c.$black;
         }
     }
 }

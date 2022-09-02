@@ -33,5 +33,36 @@
                 transform: rotate(-6deg);
             }
         }
+        &.btn-intro {
+            background-image: url(../../public/images/paint-slash.svg);
+            background-size: 300px;
+            background-position: 10px center;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border: 0;
+            border-radius: 0;
+            padding: 1.5rem 2.5rem;
+            font-family: "Anton";
+            font-size: 2rem;
+            font-style: italic;
+            text-shadow: 0 0 20px rgba(c.$black, 0.4);
+            text-transform: uppercase;
+            &:hover {
+                span {
+                    text-shadow: 0 0 20px rgba(c.$black, 0.9);
+                }
+            }
+            @media (max-width: 576.98px) {
+                background-position: 45px center;
+                background-size: 300px;
+                font-size: 2rem;
+                padding: 1.5rem 4rem;
+            }
+            span {
+                display: block;
+                transition: all 0.5s;
+                transform: rotate(-6deg);
+            }
+        }
     }
 }
