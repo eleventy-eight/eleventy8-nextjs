@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
             strategy='afterInteractive'
             src='https://www.googletagmanager.com/gtag/js?id=UA-168214894-1'
         />
-        <Script strategy='afterInteractive'>
+        <Script id='ga' strategy='afterInteractive'>
             {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
