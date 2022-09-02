@@ -3,11 +3,10 @@ import Image from "next/image";
 
 // Import graphics
 import e8Logo from "../public/images/e8-logo.svg";
-import { List } from "react-bootstrap-icons";
 
 export default function SiteHeader() {
     return (
-        <header className='fixed-top d-flex flex-row justify-content-between align-items-center align-items-stretch'>
+        <header className='d-flex flex-row justify-content-center align-items-center align-items-stretch'>
             <Link href='/'>
                 <a id='site-logo'>
                     <Image
@@ -18,15 +17,6 @@ export default function SiteHeader() {
                     />
                 </a>
             </Link>
-            <a
-                id='toggle-offcanvas'
-                data-bs-toggle='offcanvas'
-                href='#offcanvas'
-                role='button'
-                aria-controls='offcanvas'
-            >
-                <List />
-            </a>
         </header>
     );
 }

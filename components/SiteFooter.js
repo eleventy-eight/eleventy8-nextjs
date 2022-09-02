@@ -1,5 +1,4 @@
 import Link from "next/link";
-import SiteOffcanvas from "../components/SiteOffcanvas";
 import ScriptBMCWidget from "../components/ScriptBMCWidget";
 
 export default function SiteFooter() {
@@ -13,7 +12,6 @@ export default function SiteFooter() {
                     </a>
                 </Link>
             </p>
-            <SiteOffcanvas />
             <ScriptBMCWidget />
         </footer>
     );

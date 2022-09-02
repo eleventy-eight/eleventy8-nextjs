@@ -4,50 +4,21 @@
     background-color: c.$black;
     padding: 1rem 1.5rem;
     .offcanvas-body {
-        #offcanvas-intro {
-            #offcanvas-navigation {
-                list-style: none;
-                padding: 0 0 0 1rem;
-                li {
-                    a {
-                        color: c.$white;
-                        text-decoration: none;
-                        transition: all 0.5s;
-                        &:hover {
-                            color: c.$brand-secondary;
-                        }
-                    }
-                    &:before {
-                        content: "\2022";
-                        color: red;
-                        font-weight: bold;
-                        display: inline-block;
-                        width: 1rem;
-                        margin-left: -1rem;
-                    }
-                }
-            }
-        }
-        #offcanvas-bmc {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        ul#offcanvas-socials {
+        .offcanvas-nav {
             list-style: none;
             padding: 0;
-            margin-bottom: 3rem;
-            columns: 6;
             li {
-                margin-bottom: 0.4rem;
-            }
-        }
-        footer {
-            text-align: center;
-            border-top: 1px solid #666666;
-            padding-top: 1rem;
-            a {
-                color: c.$brand-secondary;
-                text-decoration: none;
+                a {
+                    line-height: 40px;
+                    display: block;
+                    outline: 1px solid red;
+                    color: c.$white;
+                    text-decoration: none;
+                    transition: all 0.5s;
+                    &:hover {
+                        color: c.$brand-secondary;
+                    }
+                }
             }
         }
     }
