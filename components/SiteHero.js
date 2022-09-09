@@ -11,11 +11,11 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 // Import Graphics
+import topGunMPosterPortrait from "../public/images/movies/top-gun-maverick-2022-portrait.jpg";
 import getCarter from "../public/images/movies/get-carter-1971-portrait.jpg";
 import madMaxPosterPortrait from "../public/images/movies/mad-max-1979-portrait.jpg";
 import preyPosterPortrait from "../public/images/movies/prey-2022-portrait.jpg";
 import NTTDPosterPortrait from "../public/images/movies/nttd-2020-portrait.jpg";
-import TOTPPosterPortrait from "../public/images/movies/totp-2022-portrait.jpg";
 
 export default function SiteHero() {
     return (
@@ -32,6 +32,25 @@ export default function SiteHero() {
                 disableOnInteraction: true,
             }}
         >
+            <SwiperSlide>
+                <div className='swiper-slide-content'>
+                    <Link href='https://youtu.be/Llw68dxVzHc'>
+                        <a
+                            className='btn btn-primary btn-hero'
+                            rel='noopner noreferrer'
+                            target='_blank'
+                        >
+                            <span>Watch Our Review</span>
+                        </a>
+                    </Link>
+                </div>
+                <Image
+                    src={topGunMPosterPortrait}
+                    alt='Top Gun: Maverick (2022) Movie Review'
+                    layout='fill'
+                    priority
+                />
+            </SwiperSlide>
             <SwiperSlide>
                 <div className='swiper-slide-content'>
                     <Link href='https://youtu.be/OssjkfaxS6w'>
@@ -104,25 +123,6 @@ export default function SiteHero() {
                 <Image
                     src={NTTDPosterPortrait}
                     alt='No Time To Die (2020) Movie Review'
-                    layout='fill'
-                    priority
-                />
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='swiper-slide-content'>
-                    <Link href='https://youtu.be/sHj3YBvDnXk'>
-                        <a
-                            className='btn btn-primary btn-hero'
-                            rel='noopner noreferrer'
-                            target='_blank'
-                        >
-                            <span>Watch Our Review</span>
-                        </a>
-                    </Link>
-                </div>
-                <Image
-                    src={TOTPPosterPortrait}
-                    alt='Terror on the Prairie (2022) Movie Review'
                     layout='fill'
                     priority
                 />
