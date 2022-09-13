@@ -34,7 +34,7 @@ export default function SiteHero() {
         >
             <SwiperSlide>
                 <div className='swiper-slide-content'>
-                    <Link href='https://youtu.be/Llw68dxVzHc'>
+                    <Link href='https://youtu.be/leqsAUfMZEw'>
                         <a
                             className='btn btn-primary btn-hero'
                             rel='noopner noreferrer'
