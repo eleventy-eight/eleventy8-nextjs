@@ -51,6 +51,12 @@ export default function Document() {
                     title='Eleventy8 Videos'
                     href='https://www.youtube.com/feeds/videos.xml?channel_id=UCMwhK00OKytB3cCPpHjPY9g'
                 />
+                <link
+                    rel='alternate'
+                    type='application/rss+xml'
+                    title='Eleventy8 Podcast'
+                    href='https://anchor.fm/s/6a7ec77c/podcast/rss'
+                />
             </Head>
             <body className='bg-black text-white'>
                 <Main />
