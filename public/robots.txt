@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://eleventy8.com
+
+# Sitemaps
+Sitemap: https://eleventy8.com/sitemap.xml

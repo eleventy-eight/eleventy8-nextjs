@@ -8,13 +8,7 @@ module.exports = {
     async redirects() {
         return [
             {
-                source: "sitemap.xml",
-                destination: "/api/sitemap",
-
-                source: "/about",
-                destination: "/",
-                permanent: true,
-
+                // Keep checking GSC for 404 errors
                 source: "/movie-reviews/:slug*",
                 destination: "/",
                 permanent: true,
