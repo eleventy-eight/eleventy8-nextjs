@@ -29,6 +29,9 @@ function MyApp({ Component, pageProps }) {
             src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6140993113558726'
             crossorigin='anonymous'
         />
+        <Script id='aosPlugin' strategy='afterInteractive'>
+            AOS.init();
+        </Script>
     </>;
 
     return <Component {...pageProps} />;

@@ -11,11 +11,11 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 // Import Graphics
+import raiders from "../public/images/movies/raiders.jpg";
 import topGunMPosterPortrait from "../public/images/movies/top-gun-maverick-2022-portrait.jpg";
 import getCarter from "../public/images/movies/get-carter-1971-portrait.jpg";
 import madMaxPosterPortrait from "../public/images/movies/mad-max-1979-portrait.jpg";
 import preyPosterPortrait from "../public/images/movies/prey-2022-portrait.jpg";
-import NTTDPosterPortrait from "../public/images/movies/nttd-2020-portrait.jpg";
 
 export default function SiteHero() {
     return (
@@ -32,6 +32,25 @@ export default function SiteHero() {
                 disableOnInteraction: true,
             }}
         >
+            <SwiperSlide>
+                <div className='swiper-slide-content'>
+                    <Link href='https://youtu.be/ALhpsBJnrvc'>
+                        <a
+                            className='btn btn-primary btn-hero'
+                            rel='noopner noreferrer'
+                            target='_blank'
+                        >
+                            <span>Watch Our Review</span>
+                        </a>
+                    </Link>
+                </div>
+                <Image
+                    src={raiders}
+                    alt='Raiders of the Lost Ark (1981) Movie Review'
+                    layout='fill'
+                    priority
+                />
+            </SwiperSlide>
             <SwiperSlide>
                 <div className='swiper-slide-content'>
                     <Link href='https://youtu.be/leqsAUfMZEw'>
@@ -104,25 +123,6 @@ export default function SiteHero() {
                 <Image
                     src={preyPosterPortrait}
                     alt='Prey (2022) Movie Review'
-                    layout='fill'
-                    priority
-                />
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='swiper-slide-content'>
-                    <Link href='https://youtu.be/rGBOcyh2EJ8'>
-                        <a
-                            className='btn btn-primary btn-hero'
-                            rel='noopner noreferrer'
-                            target='_blank'
-                        >
-                            <span>Watch Our Review</span>
-                        </a>
-                    </Link>
-                </div>
-                <Image
-                    src={NTTDPosterPortrait}
-                    alt='No Time To Die (2020) Movie Review'
                     layout='fill'
                     priority
                 />
