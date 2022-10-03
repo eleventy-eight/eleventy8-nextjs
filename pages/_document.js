@@ -57,18 +57,6 @@ export default function Document() {
                     title='Eleventy8 Podcasts'
                     href='https://anchor.fm/s/6a7ec77c/podcast/rss'
                 />
-                <link
-                    rel='alternate'
-                    type='application/rss+xml'
-                    title='Eleventy8 on Twitter'
-                    href='https://fetchrss.com/rss/632348b7b9a09c3cb71b3b92632348921d20da752d0d4612.xml'
-                />
-                <link
-                    rel='alternate'
-                    type='application/rss+xml'
-                    title='Eleventy8 on Facebook'
-                    href='https://fetchrss.com/rss/632348b7b9a09c3cb71b3b9263234975adb4a12f724da6b2.xml'
-                />
             </Head>
             <body className='bg-black text-white'>
                 <Main />
