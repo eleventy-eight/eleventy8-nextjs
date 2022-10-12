@@ -14,7 +14,6 @@ module.exports = {
                 permanent: true,
             },
             {
-                // Keep checking GSC for 404 errors
                 source: "/author/eleventy8:slug*",
                 destination: "/",
                 permanent: true,

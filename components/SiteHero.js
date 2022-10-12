@@ -11,11 +11,11 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 // Import Graphics
+import joker from "../public/images/movies/joker.jpg";
 import boysFromBrazil from "../public/images/movies/boysfrombrazil.jpg";
 import timeBandits from "../public/images/movies/time-bandits.jpg";
 import raiders from "../public/images/movies/raiders.jpg";
 import topGunMPosterPortrait from "../public/images/movies/top-gun-maverick-2022-portrait.jpg";
-import getCarter from "../public/images/movies/get-carter-1971-portrait.jpg";
 
 export default function SiteHero() {
     return (
@@ -32,6 +32,25 @@ export default function SiteHero() {
                 disableOnInteraction: true,
             }}
         >
+            <SwiperSlide>
+                <div className='swiper-slide-content'>
+                    <Link href='https://youtu.be/Lu4RJvnsnB0'>
+                        <a
+                            className='btn btn-primary btn-hero'
+                            rel='noopner noreferrer'
+                            target='_blank'
+                        >
+                            <span>Watch Our Review</span>
+                        </a>
+                    </Link>
+                </div>
+                <Image
+                    src={joker}
+                    alt='Joker (2019) Movie Review'
+                    layout='fill'
+                    priority
+                />
+            </SwiperSlide>
             <SwiperSlide>
                 <div className='swiper-slide-content'>
                     <Link href='https://youtu.be/YIaRqxXpg2w'>
@@ -104,25 +123,6 @@ export default function SiteHero() {
                 <Image
                     src={topGunMPosterPortrait}
                     alt='Top Gun: Maverick (2022) Movie Review'
-                    layout='fill'
-                    priority
-                />
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='swiper-slide-content'>
-                    <Link href='https://youtu.be/OssjkfaxS6w'>
-                        <a
-                            className='btn btn-primary btn-hero'
-                            rel='noopner noreferrer'
-                            target='_blank'
-                        >
-                            <span>Watch Our Review</span>
-                        </a>
-                    </Link>
-                </div>
-                <Image
-                    src={getCarter}
-                    alt='Get Carter (1971) Movie Review'
                     layout='fill'
                     priority
                 />
