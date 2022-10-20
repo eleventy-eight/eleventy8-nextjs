@@ -11,11 +11,11 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 // Import Graphics
+import baron from "../public/images/movies/baron.jpg";
 import joker from "../public/images/movies/joker.jpg";
 import boysFromBrazil from "../public/images/movies/boysfrombrazil.jpg";
 import timeBandits from "../public/images/movies/time-bandits.jpg";
 import raiders from "../public/images/movies/raiders.jpg";
-import topGunMPosterPortrait from "../public/images/movies/top-gun-maverick-2022-portrait.jpg";
 
 export default function SiteHero() {
     return (
@@ -32,6 +32,25 @@ export default function SiteHero() {
                 disableOnInteraction: true,
             }}
         >
+            <SwiperSlide>
+                <div className='swiper-slide-content'>
+                    <Link href='https://youtu.be/Y4dzbY4tTk4'>
+                        <a
+                            className='btn btn-primary btn-hero'
+                            rel='noopner noreferrer'
+                            target='_blank'
+                        >
+                            <span>Watch Our Review</span>
+                        </a>
+                    </Link>
+                </div>
+                <Image
+                    src={baron}
+                    alt='The Adventures of Baron Munchausen (1988) Movie Review'
+                    layout='fill'
+                    priority
+                />
+            </SwiperSlide>
             <SwiperSlide>
                 <div className='swiper-slide-content'>
                     <Link href='https://youtu.be/Lu4RJvnsnB0'>
@@ -104,25 +123,6 @@ export default function SiteHero() {
                 <Image
                     src={raiders}
                     alt='Raiders of the Lost Ark (1981) Movie Review'
-                    layout='fill'
-                    priority
-                />
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='swiper-slide-content'>
-                    <Link href='https://youtu.be/leqsAUfMZEw'>
-                        <a
-                            className='btn btn-primary btn-hero'
-                            rel='noopner noreferrer'
-                            target='_blank'
-                        >
-                            <span>Watch Our Review</span>
-                        </a>
-                    </Link>
-                </div>
-                <Image
-                    src={topGunMPosterPortrait}
-                    alt='Top Gun: Maverick (2022) Movie Review'
                     layout='fill'
                     priority
                 />
