@@ -11,11 +11,11 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 // Import Graphics
+import charlie from "../public/images/movies/charlie.jpg";
 import eagles from "../public/images/movies/eagles-dare.jpg";
 import baron from "../public/images/movies/baron.jpg";
 import joker from "../public/images/movies/joker.jpg";
 import boysFromBrazil from "../public/images/movies/boysfrombrazil.jpg";
-import timeBandits from "../public/images/movies/time-bandits.jpg";
 
 export default function SiteHero() {
     return (
@@ -32,6 +32,25 @@ export default function SiteHero() {
                 disableOnInteraction: true,
             }}
         >
+            <SwiperSlide>
+                <div className='swiper-slide-content'>
+                    <Link href='https://youtu.be/O-Ghl4De8_k'>
+                        <a
+                            className='btn btn-primary btn-hero'
+                            rel='noopner noreferrer'
+                            target='_blank'
+                        >
+                            <span>Watch Our Review</span>
+                        </a>
+                    </Link>
+                </div>
+                <Image
+                    src={charlie}
+                    alt='Goodbye Charlie Bright (2001) Movie Review'
+                    layout='fill'
+                    priority
+                />
+            </SwiperSlide>
             <SwiperSlide>
                 <div className='swiper-slide-content'>
                     <Link href=''>
@@ -104,25 +123,6 @@ export default function SiteHero() {
                 <Image
                     src={boysFromBrazil}
                     alt='The Boys From Brazil (1978) Movie Review'
-                    layout='fill'
-                    priority
-                />
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='swiper-slide-content'>
-                    <Link href='https://youtu.be/IA0squMxhaI'>
-                        <a
-                            className='btn btn-primary btn-hero'
-                            rel='noopner noreferrer'
-                            target='_blank'
-                        >
-                            <span>Watch Our Review</span>
-                        </a>
-                    </Link>
-                </div>
-                <Image
-                    src={timeBandits}
-                    alt='Time Bandits (1981) Movie Review'
                     layout='fill'
                     priority
                 />
