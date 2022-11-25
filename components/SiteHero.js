@@ -11,13 +11,11 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 // Import Graphics
+import battle from "../public/images/movies/battle.jpg";
 import lotr from "../public/images/movies/lotr.jpg";
 import temple from "../public/images/movies/temple.jpg";
 import charlie from "../public/images/movies/charlie.jpg";
 import eagles from "../public/images/movies/eagles-dare.jpg";
-import baron from "../public/images/movies/baron.jpg";
-import joker from "../public/images/movies/joker.jpg";
-import boysFromBrazil from "../public/images/movies/boysfrombrazil.jpg";
 
 export default function SiteHero() {
     return (
@@ -34,6 +32,25 @@ export default function SiteHero() {
                 disableOnInteraction: true,
             }}
         >
+            <SwiperSlide>
+                <div className='swiper-slide-content'>
+                    <Link href='https://youtu.be/v9ymUwC9U5s'>
+                        <a
+                            className='btn btn-primary btn-hero'
+                            rel='noopner noreferrer'
+                            target='_blank'
+                        >
+                            <span>Watch Our Review</span>
+                        </a>
+                    </Link>
+                </div>
+                <Image
+                    src={battle}
+                    alt='Battle of Britain (1969) Movie Review'
+                    layout='fill'
+                    priority
+                />
+            </SwiperSlide>
             <SwiperSlide>
                 <div className='swiper-slide-content'>
                     <Link href='https://youtu.be/LpEFdwAWheU'>
@@ -106,25 +123,6 @@ export default function SiteHero() {
                 <Image
                     src={eagles}
                     alt='Where Eagles Dare (1968) Movie Review'
-                    layout='fill'
-                    priority
-                />
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='swiper-slide-content'>
-                    <Link href='https://youtu.be/Y4dzbY4tTk4'>
-                        <a
-                            className='btn btn-primary btn-hero'
-                            rel='noopner noreferrer'
-                            target='_blank'
-                        >
-                            <span>Watch Our Review</span>
-                        </a>
-                    </Link>
-                </div>
-                <Image
-                    src={baron}
-                    alt='The Adventures of Baron Munchausen (1988) Movie Review'
                     layout='fill'
                     priority
                 />
