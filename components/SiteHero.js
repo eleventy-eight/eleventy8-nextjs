@@ -11,11 +11,11 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 // Import Graphics
+import movie71 from "../public/images/movies/71.jpg";
 import battle from "../public/images/movies/battle.jpg";
 import lotr from "../public/images/movies/lotr.jpg";
 import temple from "../public/images/movies/temple.jpg";
 import charlie from "../public/images/movies/charlie.jpg";
-import eagles from "../public/images/movies/eagles-dare.jpg";
 
 export default function SiteHero() {
     return (
@@ -32,6 +32,25 @@ export default function SiteHero() {
                 disableOnInteraction: true,
             }}
         >
+            <SwiperSlide>
+                <div className='swiper-slide-content'>
+                    <Link href='https://youtu.be/bf5uv5XBCBE'>
+                        <a
+                            className='btn btn-primary btn-hero'
+                            rel='noopner noreferrer'
+                            target='_blank'
+                        >
+                            <span>Watch Our Review</span>
+                        </a>
+                    </Link>
+                </div>
+                <Image
+                    src={movie71}
+                    alt='71 (2014) Movie Review'
+                    layout='fill'
+                    priority
+                />
+            </SwiperSlide>
             <SwiperSlide>
                 <div className='swiper-slide-content'>
                     <Link href='https://youtu.be/v9ymUwC9U5s'>
@@ -104,25 +123,6 @@ export default function SiteHero() {
                 <Image
                     src={charlie}
                     alt='Goodbye Charlie Bright (2001) Movie Review'
-                    layout='fill'
-                    priority
-                />
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='swiper-slide-content'>
-                    <Link href=''>
-                        <a
-                            className='btn btn-primary btn-hero'
-                            rel='noopner noreferrer'
-                            target='_blank'
-                        >
-                            <span>Watch Our Review</span>
-                        </a>
-                    </Link>
-                </div>
-                <Image
-                    src={eagles}
-                    alt='Where Eagles Dare (1968) Movie Review'
                     layout='fill'
                     priority
                 />
